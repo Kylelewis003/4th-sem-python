@@ -4,7 +4,7 @@ class shape:
         print('-----')
 class triangle(shape): 
  
- def getdime(self):
+ def getinput(self):
         self.a=float(input("Enter side a of triangle : "))
         self.b=float(input("Enter side b of triangle : "))
         self.c=float(input("Enter side c of triangle : "))
@@ -20,14 +20,14 @@ class triangle(shape):
  
  
 class circle(shape): 
-    def getdime(self):
+    def getinput(self):
         self.r=float(input("Enter radius of circle : "))
     def area(self):
         ar=math.pi*self.r*self.r
         print("Area of circle = ",ar)
 
 class rectangle(shape): 
-    def getdime(self):
+    def getinput(self):
         self.l=float(input("Enter length of rectangle : "))
         self.w=float(input("Enter width of rectangle : "))
     def area(self):
@@ -39,11 +39,11 @@ t1=triangle()
 c1=circle()
 r1=rectangle()
 
-t1.getdime()
+t1.getinput()
 t1.area()
 t1.out()
-c1.getdime()
+c1.getinput()
 c1.area()
 c1.out()
-r1.getdime()
+r1.getinput()
 r1.area()

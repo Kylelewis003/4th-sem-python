@@ -9,7 +9,7 @@ class Employee:
         self.salary = new_salary
     
     def __str__(self):
-        return f"Employee ID: {self.emp_id}\nName: {self.name}\nDepartment: {self.department}\nSalary: ${self.salary:.2f}"
+        return f"Employee ID: {self.emp_id}\nName: {self.name}\nDepartment: {self.department}\nSalary: ${self.salary}"
 
 employees = [
     Employee("John Doe", 101, "HR", 50000),
@@ -26,5 +26,5 @@ def update_department_salary(department, new_salary):
 update_department_salary("IT", 65000)
 
 for emp in employees:
-    print(emp)
+    print(emp.__str__())
     print("-------------")
