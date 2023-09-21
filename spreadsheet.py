@@ -3,7 +3,6 @@ import openpyxl
 def readata(filename , sheetname):
     workbook = openpyxl.load_workbook(filename)
     sheet = workbook[sheetname]
-    data = []
     for row in sheet.iter_rows():
         for i in row:
             print(i.value,end = " ")
